@@ -24,11 +24,11 @@ $("#createGame").click(function () {
     createGame(amountOfPlayers, entryCost)
 })
 
-function createGame(entryCost, amountOfPlayers) {
+function createGame(amountOfPlayers, entryCost) {
     amount = web3.toWei(entryCost)
     gameContract.createGame.sendTransaction(
         // your crop is the referrer
-        referrer, {
+        amountOfPlayers, entryCost, {
             from: web3.eth.accounts[0],
             value: amount,
             gas: 123287,
