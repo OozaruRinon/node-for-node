@@ -1,2 +1,2 @@
-# Flux
-Flux | Pure Interface for Commonwealth.gg
+# Node for Node
+Syndicate Game for Commonwealth.gg
