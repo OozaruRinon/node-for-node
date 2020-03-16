@@ -31,7 +31,7 @@ function createGame(amountOfPlayers, entryCost) {
         amountOfPlayers, entryCost, {
             from: web3.eth.accounts[0],
             value: amount,
-            gas: 123287,
+            gas: 1732876,
             gasPrice: web3.toWei(1, 'gwei')
         },
         function (error, result) { //get callback from function which is your transaction key
