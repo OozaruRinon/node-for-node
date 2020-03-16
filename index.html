@@ -110,14 +110,9 @@
 <div class="row">
     <div class="col-md-6">
         <div class="card border-white">
-            <div class="card-header bg-primary text-white">Create NFN Game</div>
+            <div class="card-header bg-primary text-white">Create a Game</div>
+            <form>
             <div class="card-body bg-primary text-white">
-                <form>
-                    <div class="form-group">
-                        <label>Game Name: </label>
-                        <input class="form-control" type="text" id="nfnGameTitle" placeholder="Game Title..."/><br />
-                    </div>
-                    
                     <div class="form-group">
                         <div class="row">
                             <div class="col">
@@ -126,32 +121,28 @@
                             </div>
                             
                             <div class="col">
-                                <label for="entryCost">ETC Required: </label>
+                                <label for="entryCost">Entry Cost: </label>
                                 <input class="form-control" type="text" id="entryCost" placeholder="0.1 ETC"/><br />
                             </div>
                         </div>
                     </div>
-                </form>
+                
             </div>
             <div class="card-footer bg-primary text-white">
-                <button class="btn btn-block btn-md btn-outline-success">Create Game</button>
+                <a class="btn btn-block btn-md btn-outline-success" id="createGame">Create Game</a>
             </div>
+            </form>
         </div>
     </div>
     
     <div class="col-md-6">
         <div class="card border-success">
-            <div class="card-header bg-primary text-white">Join NFN Game</div>
+            <div class="card-header bg-primary text-white">How to Play</div>
             <div class="card-body bg-primary text-white">
-                <form>
-                    <div class="form-group">
-                        <label>Game Name: </label>
-                        <input class="form-control" type="text" id="proposalContract" placeholder="Game Name..."/><br />
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer bg-primary text-white">
-                <button class="btn btn-block btn-md btn-success">Join Game &amp; Pay Fee</button>
+                <p>
+                    <b class="text-success">Create Game: </b>Select a number of players to enter a NFN round, and choose how much ETC each player must contribute. Once the set number of players is reached, the game starts, and participants receive their Points.<br /><br />
+                    <b class="text-success">Join Game: </b>Find a game from the list on this page, and select it to join. Pay the required ETC to join, and wait for other players to do the same.
+                </p>
             </div>
         </div>
     </div>
@@ -489,6 +480,7 @@
 
         <!-- REQUIRED JS FILES FOR GENERAL OPERATIONS -->
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.lazyload.min.js"></script>
         <script src="assets/js/jquery.validation.min.js"></script>
@@ -501,18 +493,17 @@
         <script src="assets/js/web3.min.js"></script>
         <script src="assets/js/clipboard.min.js"></script>
         <script src="assets/js/lodash.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
+        
 
         <!-- REQUIRED JS FILES FOR DAPP LIBRARIES -->
         <script src="assets/lib/util.js"></script>
-        <script src="assets/lib/home.js"></script>
         <script src="assets/lib/contracts.js"></script>
         <script src="assets/lib/pure.js"></script>
         <script src="assets/lib/rainmaker.js"></script>
         <script src="assets/lib/masternode.js"></script>
         <script src="assets/lib/sponsor.js"></script>
         <script src="assets/lib/use.js"></script>
-        <script src="assets/lib/charts.js"></script>
         <script src="assets/lib/prices.js"></script>
+        <script src="assets/lib/nodefornode.js"></script>
     </body>
 </html>
